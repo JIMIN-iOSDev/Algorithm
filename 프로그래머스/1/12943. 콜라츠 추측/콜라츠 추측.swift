@@ -3,7 +3,7 @@ func solution(_ num:Int) -> Int {
     var n = num
     
     while n > 1 {
-        if count == 501 {
+        if count > 500 {
             return -1
         }
         if n % 2 == 0 {
