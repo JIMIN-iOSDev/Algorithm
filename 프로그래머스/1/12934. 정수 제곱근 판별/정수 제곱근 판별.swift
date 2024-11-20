@@ -1,6 +1,15 @@
 import Foundation
 
 func solution(_ n:Int64) -> Int64 {
-    let num = Int64(sqrt(Double(n)))
-    return num * num == n ? (num + 1) * (num + 1) : -1
+    var count: Int64 = 0
+    
+    while count * count < n {
+        count += 1
+    }
+    
+    if count * count == n {
+        return (count + 1) * (count + 1)
+    } else {
+        return -1
+    }
 }
